@@ -1,0 +1,691 @@
+/* Utilities */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.black-bg {
+  background-color: #000000;
+}
+
+.align-vertical {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.align-horizontal {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.align-vertical-horizontal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+/* Tipografia */
+
+h1 {
+  font-size: 48px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 54px;
+  color: #222222;
+}
+
+h2 {
+  font-size: 43px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 50px;
+  color: #222222;
+}
+
+h3 {
+  font-size: 35px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 45px;
+  color: #222222;
+}
+
+h5 {
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 26px;
+  color: #222222;
+}
+
+
+/* Container */
+
+.container {
+  width: 1520px;
+  height: 100%;
+  margin: auto;
+}
+
+
+/* Buttons */
+
+.light-button {
+  background-color: #ffffff;
+  color: #222222;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  text-decoration: none;
+  padding: 14px 26px;
+  border-radius: 8px;
+}
+
+.light-button:hover {
+  background-color: #f4f4f4;
+}
+
+.dark-button {
+  background-color: #222222;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  text-decoration: none;
+  padding: 14px 26px;
+  border-radius: 8px;
+}
+
+.dark-button:hover {
+  background-color: #000000;
+}
+
+
+/* Navbar */
+
+nav .container {
+  position: relative;
+}
+
+nav {
+  width: 100%;
+  height: 80px;
+}
+
+nav .logo-nav {
+  width: 25%;
+  height: 100%;
+  float: left;
+  position: relative;
+}
+
+
+/* Navbar Logo */
+
+.logo-nav img {
+  height: 40%;
+}
+
+
+/* Navbar Menu */
+
+nav .menu-nav {
+  width: 50%;
+  height: 100%;
+  float: left;
+  position: relative;
+}
+
+nav .menu-nav .wrapper {
+  width: 100%;
+  text-align: center;
+}
+
+nav .menu-nav a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 200;
+}
+
+nav .menu-nav a:hover {
+  text-decoration: underline;
+}
+
+
+/* Navbar Account */
+
+nav .account-nav {
+  width: 25%;
+  height: 100%;
+  float: left;
+  position: relative;
+}
+
+nav .account-nav .wrapper {
+  width: 100%;
+}
+
+
+/* Navbar Account User Menu */
+
+nav .account-nav .user-menu {
+  width: 77px;
+  height: 40px;
+  background-color: white;
+  border-radius: 30px;
+  float: right;
+  position: relative;
+}
+
+nav .account-nav .user-menu .hamburger-menu {
+  display: inline-block;
+  left: 14px;
+}
+
+nav .account-nav .user-menu .hamburger-menu img {
+  width: 15px;
+}
+
+nav .account-nav .user-menu .profile-pic {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-image: url('img/profile-pic.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  right: 6px;
+}
+
+
+/* Navbar Account Language Menu */
+
+nav .account-nav .language-menu {
+  height: 40px;
+  width: 40px;
+  padding: 0 12px;
+  border-radius: 50%;
+  float: right;
+  margin: 0px 5px;
+  position: relative;
+}
+
+nav .account-nav .language-menu:hover {
+  background-color: rgba(255,255,255,0.2);
+}
+
+nav .account-nav .language-menu img {
+  width: 16px;
+}
+
+
+/* Navbar Account Diventa Host */
+
+nav .account-nav .diventa-host {
+  height: 40px;
+  border-radius: 30px;
+  float: right;
+  padding: 0 10px;
+  line-height: 40px;
+  font-size: 14px;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  padding: 0 15px;
+}
+
+nav .account-nav .diventa-host:hover {
+  background-color: rgba(255,255,255,0.2);
+}
+
+
+/* Search bar */
+
+#search-bar-section {
+  height: 15vh;
+}
+
+#search-bar-box {
+  height: 65px;
+  width: 56%;
+  background-color: white;
+  margin: auto;
+  border-radius: 35px;
+}
+
+#search-bar-box p {
+  font-size: 13px;
+  display: block;
+}
+
+#search-bar-section .container #search-bar-box .dove {
+  width: 32%;
+  height: 65px;
+  float: left;
+  border-right: 1px solid #dddddd;
+}
+
+#search-bar-section .container #search-bar-box .check-in {
+  width: 21%;
+  height: 65px;
+  float: left;
+  border-right: 1px solid #dddddd;
+}
+
+#search-bar-section .container #search-bar-box .check-out {
+  width: 21%;
+  height: 65px;
+  float: left;
+  border-right: 1px solid #dddddd;
+}
+
+#search-bar-section .container #search-bar-box .ospiti {
+  width: 26%;
+  height: 65px;
+  float: left;
+  position: relative;
+}
+
+#search-bar-section .container #search-bar-box .ospiti .ospiti-card {
+  width: 60%;
+  float: left;
+}
+
+#search-bar-section .container #search-bar-box .ospiti .cerca-icon {
+  width: 40%;
+  float: left;
+}
+
+#search-bar-section .container #search-bar-box .ospiti .cerca-icon {
+  background-image: url('img/search.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  right: 10px;
+}
+
+#search-bar-section .container #search-bar-box .ospiti .cerca-icon input {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px;
+}
+
+#search-bar-section .container #search-bar-box .form-card {
+  width: 100%;
+  height: 100%;
+  border-radius: 35px;
+  padding: 4px 10px 7px 37px;
+}
+
+#search-bar-section .container #search-bar-box .form-card:hover {
+  background-color: #efefef;
+}
+
+#search-bar-section .container #search-bar-box .form-card input {
+  transform: translateY(-8px);
+  border: 0px;
+  background-color: rgba(0, 0, 0, 0);
+  width: 90%;
+}
+
+
+/* CTA Refugee */
+
+#cta-refugee-section {
+  height: 431px;
+  padding-top: 5px;
+}
+
+#cta-refugee-box {
+  width: 100%;
+  height: 100%;
+  background-color: #FF385C;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+#cta-text {
+  white-space: nowrap;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+#cta-refugee-section #cta-refugee-box a {
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  padding: 8px 15px;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+
+/* CTA Sono flessibile */
+
+#cta-sono-flessibile {
+  height: 50vh;
+  padding-top: 96px;
+}
+
+#sono-flessibile-box {
+  width: 100%;
+  height: 93vh;
+  background-image: url(img/sono-flessibile.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  text-align: center;
+  color: #ffffff;
+  position: relative;
+}
+
+#white-divider {
+  height: 580px;
+}
+
+#cta-sono-flessibile #sono-flessibile-box .wrapper {
+  position: absolute;
+  bottom: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#cta-sono-flessibile #sono-flessibile-box .wrapper h1 {
+  padding-bottom: 35px;
+  color: #ffffff;
+}
+
+#cta-sono-flessibile #sono-flessibile-box .wrapper a {
+  background-color: #ffffff;
+  padding: 16px 32px;
+  border-radius: 28px;
+  font-size: 18px;
+  font-weight: 800;
+  text-decoration: none;
+  color: #6F019C;
+}
+
+#cta-sono-flessibile #sono-flessibile-box .wrapper a:hover {
+  background-color: #f4f4f4;
+}
+
+
+/* Inspirations */
+
+#inspirations {
+  padding-bottom: 96px;
+}
+
+#inspirations .wrapper {
+  padding-top: 50px;
+}
+
+#inspirations .wrapper .inspiration-column a {
+  text-decoration: none;
+}
+
+.inspiration-column {
+  width: 25%;
+  float: left;
+}
+
+.inspiration-card {
+  width: 362px;
+  height: 482px;
+}
+
+.picture-background {
+  width: 362px;
+  height: 241px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px 20px 0 0;
+}
+
+#inspirations .inspiration-card .card-info {
+  width: 362px;
+  height: 241px;
+  background: green;
+  border-radius: 0 0 20px 20px;
+  padding: 24px 16px 16px;
+  color: #ffffff;
+}
+
+#inspirations .inspiration-card .card-info h3 {
+  color: #ffffff;
+}
+
+#inspirations .inspiration-card .card-info h5 {
+  line-height: 40px;
+  color: #ffffff;
+}
+
+#inspirations .inspiration-column #napoli .picture-background {
+  background-image: url('img/napoli.webp');
+}
+
+#inspirations .inspiration-column #napoli .card-info {
+  background-color: rgb(217, 59, 48);
+}
+
+#inspirations .inspiration-column #roccaraso .picture-background {
+  background-image: url('img/roccaraso.webp');
+}
+
+#inspirations .inspiration-column #roccaraso .card-info {
+  background-color: rgb(222, 49, 81);
+}
+
+#inspirations .inspiration-column #bologna .picture-background {
+  background-image: url('img/bologna.webp');
+}
+
+#inspirations .inspiration-column #bologna .card-info {
+  background-color: rgb(204, 45, 74);
+}
+
+#inspirations .inspiration-column #venezia .picture-background {
+  background-image: url('img/venezia.webp');
+}
+
+#inspirations .inspiration-column #venezia .card-info {
+  background-color: rgb(188, 26, 110);
+}
+
+
+/* Esperienze AirBnB */
+
+.esperienze-column {
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+
+.esperienze-card {
+  width: 98%;
+  height: 855px;
+  border-radius: 15px;
+  margin-top: 48px;
+  background-color: yellow;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#esperienze-airbnb .esperienze-column #esperienze-viaggio {
+  background-image: url('img/esperienze.webp');
+}
+
+#esperienze-airbnb .esperienze-column #attivita-casa {
+  background-image: url('img/attivita-casa.webp');
+}
+
+#esperienze-airbnb .esperienze-column .esperienze-card .wrapper {
+  padding: 80px;
+  color: #ffffff;
+}
+
+#esperienze-airbnb .esperienze-column .esperienze-card .wrapper h1 {
+  font-size: 53px;
+  line-height: 60px;
+  font-weight: 600;
+  margin-bottom: 38px;
+  color: #ffffff;
+}
+
+
+/* Gift card */
+
+#gift-card {
+  margin: 96px 0;
+}
+
+#gift-card .first-column {
+  width: 33%;
+  float: left;
+}
+
+#gift-card .first-column h1 {
+  font-size: 53px;
+  margin-bottom: 38px;
+}
+
+#gift-card .second-column {
+  width: 67%;
+  height: 380px;
+  background-image: url('img/gift-cards.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  float: left;
+}
+
+
+/* Domanda Superhost */
+
+#domanda-superhost-box {
+  height: 780px;
+  width: 100%;
+  border-radius: 15px;
+  background-image: url('img/domanda-superhost.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 80px;
+  position: relative;
+  margin-bottom: 48px;
+}
+
+
+#domanda-superhost #domanda-superhost-box h1 {
+  font-size: 95px;
+  line-height: 105px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+#domanda-superhost #domanda-superhost-box a {
+  position: absolute;
+  bottom: 80px;
+  left: 80px;
+}
+
+
+/* Footer */
+
+.footer {
+  background: #f7f7f7;
+  padding-top: 48px;
+}
+
+.footer-column {
+  width: 25%;
+  float: left;
+}
+
+.footer .footer-column a,p {
+  font-size: 15px;
+  line-height: 35px;
+  font-weight: 300;
+  text-decoration: none;
+  color: #222222;
+}
+
+.footer .footer-column a:hover {
+  text-decoration: underline;
+}
+
+.footer .container .copyright {
+  width: 100%;
+  margin-top: 30px;
+  float: left;
+  border-top: 1px solid #dddddd;
+  padding: 24px 0;
+}
+
+.footer .container .copyright .copyright-column {
+  width: 50%;
+  float: left;
+}
+
+.footer .container .copyright a {
+  text-decoration: none;
+  color: #222222;
+}
+
+.footer .container .copyright a:hover {
+  text-decoration: underline;
+}
+
+.footer .container .copyright .copyright-column .social {
+  float: right;
+}
+
+.footer .container .copyright .copyright-column .social img {
+  width: 22px;
+  height: 22px;
+  margin-left: 20px;
+}
+
+.footer .container .copyright .copyright-column .valuta {
+  float: right;
+}
+
+.footer .container .copyright .valuta a {
+  text-decoration: underline;
+  margin-right: 20px;
+}
+
+.footer .container .copyright .copyright-column .language {
+  float: right;
+}
+
+.footer .container .copyright .copyright-column .language a {
+  text-decoration: underline;
+  margin-right: 20px;
+}
